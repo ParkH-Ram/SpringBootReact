@@ -1,7 +1,7 @@
 import React from 'react';
 
-setTimeout(() => {
-  console.log('hello world');
-}, 1000);
+const MyComponent = (props) => {
+  return <div>나으 새롭고 멋진 컴포넌트 내 이름은 {props.name}다</div>;
+};
 
-export default setTimeout;
+export default MyComponent;
