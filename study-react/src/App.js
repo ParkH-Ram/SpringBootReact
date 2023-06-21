@@ -106,11 +106,11 @@ import React from 'react';
 import MyComponent from './MyComponent';
 
 const App = () => {
-  return <MyComponent />;
+  return <MyComponent>랙트</MyComponent>; // MyComponent 내부에서 보여주려면 props.children 값을 보여 주어야 한다.
 };
 
-MyComponent.defaultProps = {
-  name: '기본이유',
-};
+// MyComponent.defaultProps = {
+//   name: '기본이유',
+// };
 
 export default App;
