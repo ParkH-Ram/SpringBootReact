@@ -106,7 +106,11 @@ import React from 'react';
 import MyComponent from './MyComponent';
 
 const App = () => {
-  return <MyComponent name={3}>여기가 자식?</MyComponent>; // MyComponent 내부에서 보여주려면 props.children 값을 보여 주어야 한다.
+  return (
+    <MyComponent name="리액트" favoriteNumber={8}>
+      여기가 자식?
+    </MyComponent>
+  ); // MyComponent 내부에서 보여주려면 props.children 값을 보여 주어야 한다.
   // 여기가 자식 부분이 {children} 값이 들어감
 };
 
